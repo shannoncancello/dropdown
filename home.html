@@ -457,12 +457,21 @@
 
 
 <footer class="container-fluid text-center">
-  <p>Store Copyright</p>
+    <!--<p class="footer-closer-note">Close
+        <a href="#" class="footer-closer">
+         [X]
+        </a>
+      </p><a href="#" onclick="toggle_visibility('myTable');" class="footer-closer">Close [X]</a>-->
 
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
+    <a id="toggler" href="#" onclick="toggle_visibility('emailSub', this.id);" class="footer-closer">Close [X]</a>
+
+    <p>Store Copyright</p>
+    <div id="emailSub">
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+    </div>
 </footer>
 
 </body>

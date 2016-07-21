@@ -4,6 +4,9 @@
  * Licensed under the MIT license
  */
 
+
+
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
@@ -78,6 +81,7 @@ if (typeof jQuery === 'undefined') {
     }
   })
 
+
 }(jQuery);
 
 /* ========================================================================
@@ -104,6 +108,44 @@ $(document).ready(function() {
     });
     
 });
+
+/****closing footer*****/
+
+/*$(document).ready(function() {
+    $('.example2').hide().before('<a href="#" id="toggle-example2" class="footer-closer"></a>');
+    $('a#toggle-example2').click(function() {
+        $('.example2').slideToggle(1000);
+        return false;
+    });
+});*/
+
+/*function toggle_visibility(myTable) {
+       var e = document.getElementById(myTable);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else if(e.style.display == '')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }*/
+
+    function toggle_visibility(emailSub, toggler ) {
+       var e = document.getElementById(emailSub);
+       var toggleLink = document.getElementById(toggler)
+       if (e.style.display == 'block') {
+          e.style.display = 'none';
+          toggleLink.innerHTML = 'Open [X]';
+          }
+       else if (e.style.display == '') {
+          e.style.display = 'none';
+          toggleLink.innerHTML = 'Open [X]';
+          }
+       else {
+          e.style.display = 'block';
+          toggleLink.innerHTML = 'Close [X]';
+          }
+    }
+
 
 +function ($) {
   'use strict';
