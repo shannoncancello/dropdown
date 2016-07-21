@@ -8,7 +8,7 @@ if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
 
-$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
+/*$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });*/
 
 +function ($) {
   'use strict';
@@ -17,6 +17,8 @@ $(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3')
   }
 }(jQuery);
+
+
 
 /* ========================================================================
  * Bootstrap: transition.js v3.3.6
@@ -97,6 +99,8 @@ $(document).ready(function() {
         $( this ).parents(".dropdown-submenu").addClass('open');
         // this is also open (or was)
         $( this ).toggleClass('open');
+        $( this ).siblings(".dropdown-submenu").removeClass('open');
+        //^^this^^ is for closing submenus when other submenus are opened.
     });
     
 });

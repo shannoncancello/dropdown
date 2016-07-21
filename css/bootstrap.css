@@ -5,6 +5,101 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
+
+/*.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 500px;
+}*/
+
+
+/*************/
+/*Login Popup*/
+
+/*************/
+/*Website Header Stuff*/
+
+
+/*************/
+/*Dropdown Nav*/
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  height: auto;
+  max-height: 85vh;
+  overflow: scroll;
+  position: relative;
+}
+
+
+
+/*************/
+/*Website Content*/
+.content-spacing {
+  padding-bottom: 200px;
+}
+
+
+
+/*************/
+/*Foot Stuffs*/
+footer {
+  display: block;
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-danger {
+      margin-top: 5px;
+  }
+}
+
+
+
+/*************/
+/*Login collapsed buttons*/
+.navbar-login {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  background-color: #d3d3d3;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-create-account {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  background-color: #d3d3d3;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.home-logo {
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 5px 15px;
+  background-image: none;
+  border: none;
+}
+
+
+
+/*************/
 /*Site Info*/
 .site-info {
   padding-left: 6px;
@@ -17,10 +112,9 @@
 }
 
 
+
 /**********/
-
 /*SUB_MENU */
-
 .dropdown-submenu {
     position:relative;
     background-color: #D3D3D3 !important;
@@ -59,6 +153,10 @@
     -webkit-border-radius:6px 0 6px 6px;
     -moz-border-radius:6px 0 6px 6px;
     border-radius:6px 0 6px 6px;
+}
+
+.dropdown-submenu > .dropdown-menu > .menu-item {
+  color: white;
 }
 
 
@@ -2282,7 +2380,8 @@ tbody.collapse.in {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding-right: 0;
+  padding-left: 0;
   margin: 2px 0 0;
   font-size: 14px;
   text-align: left;
@@ -2975,16 +3074,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 
-.navbar-fixed-top .navbar-collapse,
+/*.navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 500px;
-}
+}*/
 
 
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
- 
+    
   }
 }
 .container > .navbar-header,
@@ -3084,7 +3183,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -3256,7 +3356,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #ebebeb;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -3307,7 +3407,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #dfdfdf;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
