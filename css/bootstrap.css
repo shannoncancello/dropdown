@@ -30,6 +30,31 @@
   position: relative;
 }
 
+.head-bar {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+/*************/
+/*Desktop Nav*/
+@media screen and (min-width: 767px) {
+  .head-bar {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 3000px){
+  .navbar-fixed-top > .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 
 /*************/
@@ -42,15 +67,34 @@
 
 /*************/
 /*Foot Stuffs*/
+@media (min-width: 767px) {
+  footer {
+  display: block;
+  background-color: #555;
+  color: white;
+  padding: 10px 15px 15px 15px;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  }
+}
+
+@media (max-width: 767px) {
 footer {
   display: block;
   background-color: #555;
   color: white;
-  padding: 15px;
+  padding: 10px 15px 15px 15px;
   position:fixed;
   left:0px;
   bottom:0px;
   width:100%;
+}
+}
+
+footer > p {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,7 +103,16 @@ footer {
   }
 }
 
-
+/*************/
+/*Login buttons*/
+@media screen and (min-width: 767px) {
+  .navbar-login {
+    float: right;
+  }
+  .navbar-create-account {
+    float: right;
+  }
+}
 
 /*************/
 /*Login collapsed buttons*/
@@ -101,6 +154,15 @@ footer {
 
 /*************/
 /*Site Info*/
+@media screen and (min-width: 767px) {
+  .site-info {
+    display: none;
+  }
+  .site-item {
+    display: none;
+  }
+}
+
 .site-info {
   padding-left: 6px;
   margin-top: 6px;
@@ -108,10 +170,13 @@ footer {
 }
 
 .site-item {
-  margin-top: -4px;
+  background-color: #d3d3d3;
 }
 
-
+.site-item > li {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
 
 /**********/
 /*SUB_MENU */
@@ -160,8 +225,12 @@ footer {
 }
 
 
-/***********/
 
+
+
+/***********//***********//***********//***********//***********//***********/
+/***********//***********//***********//***********//***********//***********/
+/***********//***********//***********//***********//***********//***********/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1351,7 +1420,6 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
   color: #333;
@@ -3111,12 +3179,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 0;
   }
 }
+
+@media (max-width: 767px) {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
+}
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
