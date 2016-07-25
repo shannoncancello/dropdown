@@ -14,6 +14,79 @@
 
 
 /*************/
+/*Gallery*/
+.img_gallery {
+    border: 1px solid #ccc;
+}
+
+.img_gallery:hover {
+    border: 1px solid #777;
+}
+
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 3000px){
+  .responsive_gallery {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+    .responsive_gallery {
+        width: 100%;
+        padding: 3px 0;
+    }
+
+}
+
+.grid {
+    float: left;
+    width: 49.99999%;
+    padding: 3px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto; 
+}
+
+.single {
+    width: 100%;
+    padding: 3px 0;
+}
+
+.single img {
+    width: 100%;
+    height: auto;  
+}
+
+.horizontal_desc {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.horizontal_img {
+  width: 25%;
+  height: auto;
+}
+
+/*************/
 /*Login Popup*/
 
 /*************/
