@@ -25,7 +25,7 @@
 
 
 .desc {
-    padding: 15px;
+    padding: 1px;
     text-align: center;
 }
 
@@ -277,7 +277,7 @@ footer > p {
     top:0;
     left:100%;
     margin-top:-6px;
-    background-color: darkred !important;
+    background-color: #b9b9b9 !important;
     -webkit-border-radius:0 1px 1px 1px;
     -moz-border-radius:0 1px 1px 1px;
     border-radius:0 1px 1px 1px;
@@ -2571,6 +2571,7 @@ tbody.collapse.in {
   color: #333;
   white-space: nowrap;
 }
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #262626;
