@@ -16,11 +16,11 @@
 /*************/
 /*Gallery*/
 .img_gallery {
-    border: 1px solid #ccc;
+    border: 4px solid #ccc;
 }
 
 .img_gallery:hover {
-    border: 1px solid #777;
+    border: 4px solid #777;
 }
 
 
@@ -41,20 +41,31 @@
 
 @media (min-width: 768px) and (max-width: 3000px){
   .responsive_gallery {
-      padding: 0 6px;
+      padding: 6px;
       float: left;
       width: 24.99999%;
+  }
+  .img_gallery img {
+    width: 100%;
+    height: auto;  
+  }
+  .button-wrapper {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 767px){
-    .responsive_gallery {
-        width: 100%;
-        padding: 3px 0;
-    }
-
+  .responsive_gallery {
+      width: 100%;
+      padding: 3px 0;
+  }
+  .button-wrapper {
+    margin: 5px 0 5px 0;
+  }
 }
 
+
+@media only screen and (max-width: 767px){
 .grid {
     float: left;
     width: 49.99999%;
@@ -85,7 +96,7 @@
   width: 25%;
   height: auto;
 }
-
+}
 /*************/
 /*Login Popup*/
 
@@ -129,6 +140,46 @@
   }
 }
 
+@media (min-width: 768px) {
+  .navbar-nav {
+    font-size: 17px;
+    padding: 5px;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-login {
+    position: relative;
+    float: left;
+    padding: 5px 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: #580000;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    }
+  .navbar-create-account {
+    position: relative;
+    float: left;
+    padding: 5px 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: #580000;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+}
 
 /*************/
 /*Website Content*/
@@ -199,12 +250,10 @@ footer > p {
 
 /*************/
 /*Login buttons*/
-@media screen and (min-width: 767px) {
-
-}
 
 /*************/
 /*Login collapsed buttons*/
+@media screen and (max-width: 767px) {
 .navbar-login {
   position: relative;
   float: left;
@@ -212,7 +261,8 @@ footer > p {
   margin-top: 8px;
   margin-left: 15px;
   margin-bottom: 8px;
-  background-color: #d3d3d3;
+  color: white;
+  background-color: #580000;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -224,7 +274,8 @@ footer > p {
   margin-top: 8px;
   margin-left: 10px;
   margin-bottom: 8px;
-  background-color: #d3d3d3;
+  color: white;
+  background-color: #580000;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -238,7 +289,7 @@ footer > p {
   background-image: none;
   border: none;
 }
-
+}
 
 
 /*************/
@@ -2355,8 +2406,8 @@ fieldset[disabled] .btn-warning.focus {
 }
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #a50000;
+  border-color: #720000;
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -3180,20 +3231,33 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-}
-@media (min-width: 768px) {
+
+@media (max-width: 767px) {
   .navbar {
-    border-radius: 4px;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
   }
 }
 @media (min-width: 768px) {
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+  }
+}
+@media (min-width: 768px) {
+  /*.navbar-header {
+   background-color: darkred;
+  }*/
   .navbar-header {
-    float: left;
+  background: darkred; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #580000, #a50000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #580000, #a50000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #580000, #a50000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #580000, #a50000); /* Standard syntax */
   }
 }
 .navbar-collapse {
@@ -3287,7 +3351,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -3321,7 +3385,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
-  background-color: transparent;
+  /*background-color: transparent;*/
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -3343,9 +3407,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none;
   }
 }
-.navbar-nav {
-  margin-right: -15px;
-  margin-left: -15px;
+@media (max-width: 767px) { 
+  .navbar-nav {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -3375,19 +3441,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
-  .navbar-nav {
-    float: left;
-    margin: 0;
-  }
-  .navbar-nav > li {
-    float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
+
 .navbar-form {
   padding: 10px 15px;
   margin-top: 8px;
@@ -3517,7 +3571,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #ebebeb;
+  background-color: #a50000;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -3564,6 +3618,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
+  background-color: #ebebeb
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
