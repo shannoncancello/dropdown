@@ -184,13 +184,15 @@
   .navbar-nav {
     font-size: 17px;
     padding: 5px;
+    text-align: center;
   }
   .navbar-nav > li {
-    float: left;
+    display: inline-block;
   }
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+    display: block;
   }
   .navbar-login {
     position: relative;
@@ -3110,7 +3112,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li {
   position: relative;
-  display: block;
 }
 .nav > li > a {
   position: relative;
