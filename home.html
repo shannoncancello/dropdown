@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
     <script src="js/bootstrap.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -18,6 +19,7 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-login" data-toggle="collapse">Log In</button>
                 <button type="button" class="navbar-create-account" data-toggle="collapse">Create Account</button>
+                <button type="button" class="navbar-cart"><i class="medium material-icons">shopping_cart</i></button>
                 <!--<button type="button" class="home-logo"><img src="pics/compacc.gif" alt="Comp Icon" height="45" width="45"></button>-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">  
                     <span class="sr-only">Toggle navigation</span>
@@ -455,6 +457,7 @@
     </div>
 </div>
 
+<a href="#" class="back-to-top" style="display: hidden"><i class="large material-icons arrow-up">navigation</i></a>
 
 <footer class="container-fluid text-center">
     <!--<p class="footer-closer-note">Close
@@ -463,7 +466,7 @@
         </a>
       </p><a href="#" onclick="toggle_visibility('myTable');" class="footer-closer">Close [X]</a>-->
 
-    <a id="toggler" href="#" onclick="toggle_visibility('emailSub', this.id);" class="footer-closer">Close [X]</a>
+    <a id="toggler" href="javascript:void(0);" onclick="toggle_visibility('emailSub', this.id);" class="footer-closer">Close [X]</a>
 
     <p>Store Copyright</p>
     <div id="emailSub">
