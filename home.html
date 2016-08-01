@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Title of the document</title>
+<title>Home Page</title>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <meta charset="utf-8">
@@ -19,7 +19,20 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-login" data-toggle="collapse">Log In</button>
                 <button type="button" class="navbar-create-account" data-toggle="collapse">Create Account</button>
-                <button type="button" class="navbar-cart"><i class="medium material-icons">shopping_cart</i></button>
+                <!--<button type="button" class="navbar-cart"><i class="medium material-icons">shopping_cart</i></button>-->
+                <div class = "btn-group">
+                   <button type = "button" class = "btn btn-default dropdown-toggle navbar-cart" data-toggle = "dropdown"><i class="medium material-icons">shopping_cart</i></button>
+                   <ul class = "dropdown-menu cart-view" role = "menu">
+                      <img src="helmetpics/helmet4.jpg" alt="Helmet" width="50" height="50">
+                      <div class="cart-desc">!!!!</div>   
+                      
+                      <li><a href = "#">View Cart</a></li>
+                   </ul>
+                </div>
+                <!--<ul>
+                    <li>Cart is Empty</li>
+                    <li>$0.00</li>
+                </ul>-->
                 <!--<button type="button" class="home-logo"><img src="pics/compacc.gif" alt="Comp Icon" height="45" width="45"></button>-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">  
                     <span class="sr-only">Toggle navigation</span>
