@@ -272,19 +272,13 @@
     float: right;
     padding: 3px 3px;
     margin-top: 7px;
-    margin-right: 10px;
+    margin-left: 7px;
     margin-bottom: 4px;
     color: white;
-    background-color: #a50000;
+    background-color: #580000;
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-  }
-  .btn-group,
-  .btn-group-vertical {
-    position: relative;
-    vertical-align: middle;
-    float: right;
   }
 }
 
@@ -2624,6 +2618,7 @@ tbody.collapse.in {
 .btn-group,
 .btn-group-vertical {
   position: relative;
+  display: inline-block;
   vertical-align: middle;
 }
 .btn-group > .btn,
@@ -3324,6 +3319,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
