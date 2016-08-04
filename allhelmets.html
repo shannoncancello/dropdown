@@ -3,7 +3,7 @@
 <head>
 <title>Helmets</title>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#720000">
@@ -11,7 +11,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#720000">
     <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
     <script src="js/bootstrap.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +36,12 @@
                           </div>
                           $5.00
                         </div>
+                        <div class="progress free-shipping-count" style="display:none;">
+                          <div class="progress-bar progress-bar-striped active" role="progressbar"
+                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            Free Shipping!
+                          </div>
+                        </div>
                       <div class="cart-items">  
                         <img src="helmetpics/helmet4.jpg" alt="Helmet" width="50" height="50">
                         <div class="cart-desc">Add a description of the product here</div>   
@@ -40,7 +50,7 @@
                         <img src="helmetpics/helmet5.jpg" alt="Helmet" width="50" height="50">
                         <div class="cart-desc">Add a description of the product here</div>   
                       </div>
-                      <li><a href = "#">View Cart</a></li>
+                      <li><a href="#" class="view-cart">View Cart</a></li>
                    </ul>
                 </div>
                 <!--<ul>
@@ -56,7 +66,7 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav main-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Helmets<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -72,22 +82,22 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop By Category<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item">
+                                    <li>
                                         <a href="#">Full Face Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Modular Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Half Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Open Face Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Dirt Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Helmet Accessories</a>
                                     </li>
                                     
@@ -96,28 +106,28 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop By Brand<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Shoei</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Bell</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">AGV</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Schuberth</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Icon</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Scorpion</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Nolan</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">View All</a>
                                     </li>
                                 </ul>
@@ -125,37 +135,37 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop By Style<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Street</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">American V-Twin</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Off-Road</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">ATV</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Hi Viz Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Communications Systems</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Graphics</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Solid Color</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Internal Sunvisor</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Womens Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Youth Helmets</a>
                                     </li>
                                 </ul>
@@ -177,34 +187,34 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Category<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Jackets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Pants</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Gloves</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Footwear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Headwear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Protection</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Raingear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Heated Gear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Vests</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Suits</a>
                                     </li>
                                 </ul>
@@ -212,28 +222,28 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop by Brand<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Fieldsheer</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Icon</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Alpinestars</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Sliders</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Aero Moto</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Shadow</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">First Gear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">View All</a>
                                     </li>
                                 </ul>
@@ -241,37 +251,37 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop by Style<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Street</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">American V-Twin</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Off-Road</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">ATV</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Hi Viz Gear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Casual Apparel</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Kevlar Protection</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Solid Color</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Graphics</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Womens Gear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Youth Gear</a>
                                     </li>
                                 </ul>
@@ -297,73 +307,73 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop By Category<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Helmets</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Gear</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Body</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Brake</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Chemical</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Hand/Foot Controls</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Drive</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Electrical</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Engine</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Exhaust</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Fuel & Air</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Graphics</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Luggage</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Manuals</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Seats</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Security & Covers</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Shop Supplies</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Suspension</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Tires & Wheels</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Tools</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Toys</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Trailers & Ramps</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Windshield</a>
                                     </li>
                                     
@@ -372,28 +382,28 @@
                             <li class="dropdown dropdown-submenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop By Brand<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Shoei</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Alpinestars</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Dainese</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Icon</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Akrapovic</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Two Brothers</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">Yoshimura</a>
                                     </li>
-                                    <li class="menu-item ">
+                                    <li>
                                         <a href="#">View All</a>
                                     </li>
                                 </ul>
@@ -422,37 +432,37 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Brands<b class="caret"></b></a>
                     </li>
                     <li>
-                        <a href="#" >Bargain Room</a>
+                        <a href="#">Bargain Room</a>
                     </li>
                     <li>
-                        <a href="#" >Order by Phone</a>
+                        <a href="#">Order by Phone</a>
                     </li>
                     <li>
-                        <a href="#" >Shop Tires</a>
+                        <a href="#">Live Chat</a>
                     </li>
 
                     <legend class="site-info">Site Information</legend>
                     <div class="site-item">
                         <li>
-                            <a href="#" >My Account</a>
+                            <a href="#">My Account</a>
                         </li>
                         <li>
-                            <a href="#" >Order Status</a>
+                            <a href="#">Order Status</a>
                         </li>
                         <li>
-                            <a href="#" >Comp Cash</a>
+                            <a href="#">Comp Cash</a>
                         </li>
                         <li>
-                            <a href="#" >Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#" >Shipping Policies</a>
+                            <a href="#">Shipping Policies</a>
                         </li>
                         <li>
-                            <a href="#" >Easy Returns/Return Policy</a>
+                            <a href="#">Easy Returns/Return Policy</a>
                         </li>
                         <li>
-                            <a href="#" >About Us</a>
+                            <a href="#">About Us</a>
                         </li>
                     </div>
                 </ul>
@@ -462,7 +472,214 @@
 </div>
 </nav>
 
-<div class="col-md-4"></div>
+<!---Filter SEction-->
+
+<div class="col-md-4">
+    <h2 class="filter-title">Filter Options</h2>
+    <!--<div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav filter-tab">
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filters<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" >All Helmets</a>
+                    </li>
+                    <li>
+                        <a href="#" >Closeout Helmets</a>
+                    </li>
+                    <li>
+                        <a href="#" >New Helmets</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>-->
+    <div class="filter-options">
+        <div class="filter-dropdowns">
+            <select class="selectpicker show-tick" multiple data-selected-text-format="count > 3">
+              <option>$0-$50</option>
+              <option>$51-$100</option>
+              <option>$101-$150</option>
+              <option>$151-$200</option>
+            </select>
+        </div>
+        <div class="filter-dropdowns">
+            <select class="selectpicker">
+              <option>All</option>
+              <option>Full Face</option>
+              <option>Modular</option>
+              <option>Half</option>
+              <option>Open Face</option>
+              <option>Dirt</option>
+              <option>Accessories</option>
+            </select>
+        </div>
+        <div class="filter-dropdowns">
+            <select class="selectpicker">
+              <option>All</option>
+              <option>Shoei</option>
+              <option>Bell</option>
+              <option>AGV</option>
+              <option>Schuberth</option>
+              <option>Icon</option>
+              <option>Scorpion</option>
+              <option>Nolan</option>
+            </select>
+        </div>
+        <div class="filter-dropdowns">
+            <select class="selectpicker">
+              <option>All</option>
+              <option>Street</option>
+              <option>American V-Twin</option>
+              <option>Off-Road</option>
+              <option>ATV</option>
+              <option>Hi Viz Helmets</option>
+              <option>Communications Systems</option>
+              <option>Graphics</option>
+              <option>Solid Color</option>
+              <option>Internal Sunvisor</option>
+              <option>Womens Helmets</option>
+              <option>Youth Helmets</option>
+            </select>
+        </div>
+    </div>
+    <div class="collapsible-filter-wrapper">
+    <h2>Filter Options</h2>
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Price Range
+                </a>
+            </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">$0-$50</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">$51-$100</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">$101-$150</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">$151-$200</label>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Category
+                </a>
+            </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Full Face</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Modular</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Half</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Open</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Dirt</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Accessories</label>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Brand
+                </a>
+            </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Shoei</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Bell</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">AGV</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Schuberth</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Icon</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Scorpion</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Nolan</label>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Style
+                </a>
+            </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Street</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">American V-Twin</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Off-Road</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">ATV</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Hi Viz</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Communications Systems</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Graphics</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Solid Color</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Internal Sunvisor</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Womens</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Youth</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!---Sort buttons for gallery-->
 
 <div class="container-fluid text-center">
     <div class="content-spacing">
@@ -608,6 +825,7 @@
         <li>
             <a href="#" >Contact Us</a>
         </li>
+        <br>
         <li>
             <a href="#" >Shipping Policies</a>
         </li>

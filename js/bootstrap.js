@@ -411,6 +411,11 @@ jQuery(".back-to-top").click(function(event) {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
+/***********Select Picker******/
+
+
+/********************************/
+
 
 +function ($) {
   'use strict';
