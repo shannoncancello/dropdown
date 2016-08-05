@@ -110,6 +110,7 @@ $(document).ready(function() {
 });
 
 
+
 $(document).ready(function() {
   $(".img_displayer1").click(function(event){
       $(".responsive_gallery").removeClass('grid list');
@@ -118,6 +119,7 @@ $(document).ready(function() {
       $('img').removeClass('horizontal_img'); 
   });
 });
+
 
 $(document).ready(function() {
   $(".img_displayer2").click(function(event){
