@@ -19,6 +19,13 @@
 
 /*************/
 /*Website Header Stuff*/
+@media (max-width: 767px){
+  .banner-image {
+    margin-bottom: 20px;
+  }
+}
+
+
 
 /*************/
 /*Mobile filter options*/
@@ -215,7 +222,7 @@
 
   .single img {
       width: 100%;
-      height: auto;  
+      height: auto;    
   }
 
   .horizontal_desc {
